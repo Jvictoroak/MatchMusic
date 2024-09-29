@@ -7,6 +7,7 @@ import { getRecommendations, recommendationsList } from './getRecommendations.js
 import { addTrackToPlaylist, searchMusic, selectedTracksIds, showSearch } from './searchMusic.js';
 import { criarIframe } from './base.js';
 
+console.log(import.meta.env.VITE_CLIENT_ID)
 const clientId = import.meta.env.VITE_CLIENT_ID; // Coloque aqui o Client ID
 
 if (!clientId) {
