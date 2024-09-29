@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: #0f0f0f;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 99vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #EA2457;
+    color:#ffffff
+
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.selection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+}
+.searchSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    position: relative;
+
+}
+
+.searchSection label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.searchSection input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+    background-color: #202020;
+    color: #fff;
+}
+
+/* Corrigido o nome da classe searchContent */
+.searchContent {
+    z-index: 1000;
+    background-color: #232323;
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px; /* Largura igual à do campo de pesquisa */
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.result-item img {
+    border-radius: 4px;
+}
+
+.result-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.result-item:hover {
+    background-color: #323232;
+}
+
+/* 
+.musicas {
+    width:100%;
+    height: 80px;
+    display: flex;
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.musicas:hover {
+    transform: scale(1.05);
+}
+
+.musicas iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+} */
+
+.tracks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%; 
+    max-height: 80vh;
+
+
+}
+.tracks p{
+    font-size: 32px;
+} 
+
+.tracksSelected {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.tracksSelected div{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.tracksSelected iframe{ 
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tracksSelected span{
+    
+    height: 20px;
+    cursor: pointer;
+}
+
+
+#tracks-container-recommended {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#tracks-container-recommended iframe {
+    border-radius: 12px;
+    border: none;
+}
+
+#replace-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EA2457;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+#replace-button:hover {
+    background-color: #961837;
+}
+.material-symbols-outlined{
+    
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .material-symbols-outlined:hover {
+    color: #ff0040;
+  }
+  

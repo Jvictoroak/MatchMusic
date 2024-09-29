@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MatchMusic</title>
+    <script src="src/main.js" type="module"></script>
+    <link rel="stylesheet" href="styles/matchMusic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <h1>MatchMusic</h1>
+    </header>
+
+    <div class="container">
+        <div class="selection">
+            <section class="tracks">
+                <p>Suas Musicas</p>
+                <section class="tracksSelected" id="tracks-container-top"></section>
+                <button id="replace-button">Match</button>
+            </section>
+            <section class="searchSection" id="search-section">
+                <label for="search">Adicione mais musicas a suas recomendações</label>
+                <input id="search" type="text" placeholder="Procure suas músicas..." autocomplete="off">
+                <div class="searchContent" id="searchContent"></div>
+            </section>
+        </div>
+        <section id="tracks-container-recommended">
+            <iframe id="iframes" style="border-radius:12px" src="" width="100%" height="152" frameBorder="0"
+                allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </section>
+    </div>
+</body>
+
+</html>
