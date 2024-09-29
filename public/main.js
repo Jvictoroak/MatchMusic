@@ -8,7 +8,7 @@ import { addTrackToPlaylist, searchMusic, selectedTracksIds, showSearch } from '
 import { criarIframe } from './base.js';
 
 
-const clientId = '926b70f9637c45ecbe4bb42f6635cdff' // Coloque aqui o Client ID
+const clientId =import.meta.env.VITE_CLIENT_ID // Coloque aqui o Client ID
 
 if (!clientId) {
   console.error("VITE_CLIENT_ID não está definido.");
