@@ -1,11 +1,11 @@
 // main.js
 
-import { redirectToAuthCodeFlow } from './auth.js';
-import { getAccessToken } from './token.js';
-import { getTopTracks } from './topTrack.js';
-import { getRecommendations, recommendationsList } from './getRecommendations.js';
-import { addTrackToPlaylist, searchMusic, selectedTracksIds, showSearch } from './searchMusic.js';
-import { criarIframe } from './base.js';
+import { redirectToAuthCodeFlow } from '../src/auth.js';
+import { getAccessToken } from '../src/token.js';
+import { getTopTracks } from '../src/topTrack.js';
+import { getRecommendations, recommendationsList } from '../src/getRecommendations.js';
+import { addTrackToPlaylist, searchMusic, selectedTracksIds, showSearch } from '../src/searchMusic.js';
+import { criarIframe } from '../src/base.js';
 
 const clientId = import.meta.env.VITE_CLIENT_ID; // Coloque aqui o Client ID
 
