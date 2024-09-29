@@ -1,4 +1,4 @@
-import { selectedTracks, selectedTracksIds, deleteTrackPlaylist} from "./searchMusic";
+import { selectedTracks, selectedTracksIds, deleteTrackPlaylist} from "./searchMusic.js";
 export async function criarIframe(arrayBase) {
   const container = document.getElementById("tracks-container-top"); // O contêiner onde os iframes serão adicionados
 

@@ -1,4 +1,4 @@
-import { fetchWebApi } from "./fetchWebApi";
+import { fetchWebApi } from "./fetchWebApi.js";
 
 let recommendedTracks = []
 

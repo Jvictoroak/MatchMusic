@@ -1,5 +1,5 @@
-import { fetchWebApi } from "./fetchWebApi";
-import { addTrackToPlaylist } from "./searchMusic";
+import { fetchWebApi } from "./fetchWebApi.js";
+import { addTrackToPlaylist } from "./searchMusic.js";
 
 export async function getTopTracks(token) {
   return (await fetchWebApi(

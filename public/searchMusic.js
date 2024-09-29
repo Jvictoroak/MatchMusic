@@ -1,5 +1,5 @@
-import { fetchWebApi } from "./fetchWebApi";
-import { criarIframe } from "./base";
+import { fetchWebApi } from "./fetchWebApi.js";
+import { criarIframe } from "./base.js";
 
 export let selectedTracks = [];
 export let selectedTracksIds = [];
