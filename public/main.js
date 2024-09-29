@@ -9,6 +9,9 @@ import { criarIframe } from './base.js';
 
 const clientId = import.meta.env.VITE_CLIENT_ID; // Coloque aqui o Client ID
 
+if (!clientId) {
+    console.error("VITE_CLIENT_ID não está definido.");
+}
 
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
