@@ -9,10 +9,6 @@ import { criarIframe } from './base.js';
 
 const clientId = '926b70f9637c45ecbe4bb42f6635cdff' 
 
-if (!clientId) {
-  console.error("VITE_CLIENT_ID não está definido.");
-}
-
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 //mostra a área de pesquisa
